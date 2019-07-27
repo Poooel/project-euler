@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'net.ltgt.apt' version '0.19'
+}
+
+version 'v1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Guava
+    compile group: 'com.google.guava', name: 'guava', version: '28.0-jre'
+
+    // Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    apt 'org.projectlombok:lombok:1.18.8'
+}
