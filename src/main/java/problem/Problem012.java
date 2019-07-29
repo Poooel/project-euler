@@ -15,7 +15,7 @@ public class Problem012 implements Executable {
         for (long i = 1; i < Long.MAX_VALUE; i++) {
             long sum = LongStream.range(1, i + 1).sum();
 
-            if (MathUtils.findFactors(sum).length >= 5) {
+            if (MathUtils.findFactors(sum).length >= 500) {
                 return sum;
             }
         }
