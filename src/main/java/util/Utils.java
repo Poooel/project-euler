@@ -25,6 +25,16 @@ public class Utils {
         return product;
     }
 
+    public long sumOfArray(int[] array) {
+        long sum = 0;
+
+        for (int value : array) {
+            sum += value;
+        }
+
+        return sum;
+    }
+
     public int[] getDigits(String number) {
         int[] digits = new int[number.length()];
 
@@ -37,5 +47,9 @@ public class Utils {
 
     public int[] subArray(int[] array, int startIndex, int endIndex) {
         return Arrays.copyOfRange(array, startIndex, endIndex);
+    }
+
+    public String removeSpaces(String str) {
+        return str.replaceAll(" ", "");
     }
 }

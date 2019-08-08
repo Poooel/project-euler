@@ -16,11 +16,17 @@ public class Launcher {
             25
         );
 
+        Executable problem = getCorrespondingExecutableProblem(choosenProblem);
+        long startMillis = System.currentTimeMillis();
+        long result = problem.execute();
+        long endMillis = System.currentTimeMillis();
+
         System.out.println(
             String.format(
-                "The answer for the problem %03d is: %d",
+                "The answer for the problem %03d is: %d (Computed in approx. %dms)",
                 choosenProblem,
-                getCorrespondingExecutableProblem(choosenProblem).execute()
+                result,
+                endMillis - startMillis
             )
         );
     }

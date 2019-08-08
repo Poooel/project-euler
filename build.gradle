@@ -11,7 +11,7 @@ repositories {
 
 dependencies {
     // Guava
-    implementation group: 'com.google.guava', name: 'guava', version: '28.0-jre'
+    compile 'com.google.guava:guava:28.0-jre'
 
     // Lombok
     compileOnly 'org.projectlombok:lombok:1.18.8'
